@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planos Fibra Hortolândia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Planos Fibra Hortolândia</h1>
+    <button id="toggle-dark">🌙</button>
+  </header>
+
+  <section class="hero" data-aos="fade-in">
+    <h2>Internet rápida e estável!</h2>
+    <a class="button" href="#contato">Fale Conosco</a>
+  </section>
+
+  <section id="contato" data-aos="fade-up">
+    <h2>Formulário de Contato</h2>
+    <form id="contact-form">
+      <input type="text" name="nome" placeholder="Nome completo" required />
+      <input type="text" name="telefone" placeholder="Telefone" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+      <button type="submit" class="button">Enviar</button>
+      <div id="form-loader">Enviando...</div>
+    </form>
+  </section>
+
+  <section id="faq" data-aos="fade-up">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-item">
+      <h3>Qual a velocidade?</h3>
+      <div class="faq-answer">Oferecemos planos de até 1 Giga.</div>
+    </div>
+    <div class="faq-item">
+      <h3>Como contratar?</h3>
+      <div class="faq-answer">Preencha o formulário ou fale pelo WhatsApp.</div>
+    </div>
+  </section>
+
+  <div id="chat-container">
+    <div id="chat-header">
+      Atendimento Virtual
+      <span id="chat-close">✖</span>
+    </div>
+    <div id="chat-messages"></div>
+    <div id="chat-input-container">
+      <input type="text" id="chat-input" placeholder="Digite sua pergunta..." />
+      <button id="chat-send-btn">Enviar</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
